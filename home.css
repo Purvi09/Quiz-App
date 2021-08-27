@@ -1,0 +1,31 @@
+h1{
+    margin:auto;
+    text-align: center;
+    padding:40px;
+}
+.Question{
+    margin-left:300px;
+    padding:30px;
+    margin-right:200px;
+    background-color: rgb(175, 224, 224);
+}
+li{
+    padding:5px
+}
+.submission{
+    padding:20px;
+    text-align: center;
+}
+input[type="submit"]
+{
+    font-size:20px;
+    margin:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.options{
+    background-color: rgb(196, 248, 248);
+    padding:40px;
+    margin-left:300px;
+    margin-right:200px;
+}
