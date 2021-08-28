@@ -13,31 +13,33 @@
     <div class="container">
         <h1>Create Your Own Quiz!</h1>
 
-        <form class="QIP">
+        <form class="QIP" action="#">
             <div class="content">
             <div class="Question">
                 <h3>Enter the Question:</h3>
-                <textarea name="myques" cols="100" rows="5" placeholder="type your question here"></textarea>
+                <textarea name="myques" cols="100" rows="5" placeholder="type your question here" id="ques"></textarea>
             </div>
             <div class="options">
                 <ol>
-                <li><input type="radio"name="answer"id="ans1"class="answer">
-                <label for="ans1"><input type="text"placeholder="option1"id="option1"></label></li>
-                <li><input type="radio"name="answer"id="ans2"class="answer">
-                <label for="ans2"><input type="text"placeholder="option2"id="option2"></label></li>
-                <li><input type="radio"name="answer"id="ans3"class="answer">
-                <label for="ans3"><input type="text"placeholder="option3"id="option3"></label></li>
-                <li><input type="radio"name="answer"id="ans4"class="answer">
-                <label for="ans4"><input type="text"placeholder="option4"id="option4"></label></li>
+                <li><input type="radio" name="answer" id="ans1" class="answer">
+                <label for="ans1"><input type="text" placeholder="option1" id="option1" class="opt"></label></li>
+
+                <li><input type="radio" name="answer" id="ans2" class="answer">
+                <label for="ans2"><input type="text" placeholder="option2" id="option2" class="opt"></label></li>
+
+                <li><input type="radio" name="answer" id="ans3" class="answer">
+                <label for="ans3"><input type="text" placeholder="option3" id="option3" class="opt"></label></li>
+
+                <li><input type="radio" name="answer" id="ans4" class="answer">
+                <label for="ans4"><input type="text" placeholder="option4" id="option4" class="opt"></label></li>
                 </ol>
             </div>
 
-                
+
             </div>
             <div class="submission">
-                <input type="submit"value="Add Ques"id="addq">
-                <input type="submit"value="Submit"id="sub">
-                
+                <button type="submit" value="Add Ques" id="addq">
+                <!-- <input type="submit" value="Submit" id="sub"> -->
             </div>
         </form>
     </div>
