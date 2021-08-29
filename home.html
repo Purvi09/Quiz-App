@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Maker</title>
-    <link rel="stylesheet"href="home.css">
+    <link rel="stylesheet" href="home.css">
 </head>
 
 <body>
@@ -15,25 +15,32 @@
 
         <form class="QIP" action="#" id="add" autocomplete="off">
             <div class="content">
-            <div class="Question">
-                <h3>Enter the Question:</h3>
-                <textarea name="myques" cols="100" rows="5" placeholder="type your question here" id="ques"></textarea>
-            </div>
-            <div class="options">
-                <ol>
-                <li><input type="radio" name="answer" id="ans1" class="answer">
-                <label for="ans1"><input type="text" placeholder="option1" id="option1" class="opt"></label></li>
+                <div class="Question">
+                    <h3>Quiz title:</h3>
+                    <input type="text" name="title" id="title" placeholder="Add Quiz title" class="textquiz">
+                    <h3 id="ETQ">Enter the Question:</h3>
+                    <textarea name="myques" placeholder="type your question here" id="ques" class="textques"></textarea>
+                </div>
+                <div class="options">
+                    <ol>
+                        <li><input type="radio" name="answer" id="ans1" class="answer">
+                            <label for="ans1"><input type="text" placeholder="option1" id="option1" class="opt"></label>
+                        </li>
 
-                <li><input type="radio" name="answer" id="ans2" class="answer">
-                <label for="ans2"><input type="text" placeholder="option2" id="option2" class="opt"></label></li>
+                        <li><input type="radio" name="answer" id="ans2" class="answer">
+                            <label for="ans2"><input type="text" placeholder="option2" id="option2" class="opt"></label>
+                        </li>
 
-                <li><input type="radio" name="answer" id="ans3" class="answer">
-                <label for="ans3"><input type="text" placeholder="option3" id="option3" class="opt"></label></li>
+                        <li><input type="radio" name="answer" id="ans3" class="answer">
+                            <label for="ans3"><input type="text" placeholder="option3" id="option3" class="opt"></label>
+                        </li>
 
-                <li><input type="radio" name="answer" id="ans4" class="answer">
-                <label for="ans4"><input type="text" placeholder="option4" id="option4" class="opt"></label></li>
-                </ol>
-            </div>
+                        <li><input type="radio" name="answer" id="ans4" class="answer">
+                            <label for="ans4"><input type="text" placeholder="option4" id="option4" class="opt"></label>
+                        </li>
+                    </ol>
+                    <span id="NOQ" >Number of questions added-</span> <span> 5 </span>
+                </div>
 
 
             </div>
