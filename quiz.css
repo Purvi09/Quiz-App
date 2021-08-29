@@ -1,5 +1,5 @@
 body{
-    background-image: url("Lighting-lamps-effect-vector-background-illustration-16.webp");
+    background-image: url("bg.webp");
     background-repeat: no-repeat;
     background-size:100%;
 }
@@ -54,7 +54,7 @@ button{
         width:33.33%;
         font-size: 100%;
         text-align: center;
-    }   
+    }
     .Question{
             text-align: center;
             font-size: 200%;
