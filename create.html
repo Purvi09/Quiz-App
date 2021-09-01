@@ -11,35 +11,35 @@
 
 <body>
     <div class="container">
-        <h1>Create Your Own Quiz!</h1>
+       <pre> <h1> <img src="css/2.png" width="5.45%"style="padding-top: 15px;"> Quiz Maker</h1></pre>
 
-        <form class="QIP" action="#" id="add" autocomplete="off">
+        <form class="QIP" action="#" id="add" autocomplete="off" name="myform">
             <div class="content">
                 <div class="Question">
                     <!-- <h3>Quiz title:</h3>
                     <input type="text" name="title" id="title" placeholder="Add Quiz title" class="textquiz"> -->
-                    <h3 id="ETQ">Enter the Question:</h3>
-                    <textarea name="myques" placeholder="type your question here" id="ques" class="textques"></textarea>
+                    <span id="ETQ">Enter the Question:</span><span id="NOQ">Number of questions added:  <span id="numQ">0 </span></span>
+                    <textarea name="myques" placeholder="type your question here" id="ques" class="textques" required></textarea>
                 </div>
                 <div class="options">
                     <ol>
-                        <li><input type="radio" name="answer" id="ans1" class="answer">
-                            <label for="ans1"><input type="text" placeholder="option1" id="option1" class="opt"></label>
+                        <li><input type="checkbox" name="answer" id="ans1" class="answer">
+                            <label for="ans1"><input type="text" placeholder="option1" id="option1" class="opt" required></label>
                         </li>
 
-                        <li><input type="radio" name="answer" id="ans2" class="answer">
-                            <label for="ans2"><input type="text" placeholder="option2" id="option2" class="opt"></label>
+                        <li><input type="checkbox" name="answer" id="ans2" class="answer">
+                            <label for="ans2"><input type="text" placeholder="option2" id="option2" class="opt" required></label>
                         </li>
 
-                        <li><input type="radio" name="answer" id="ans3" class="answer">
-                            <label for="ans3"><input type="text" placeholder="option3" id="option3" class="opt"></label>
+                        <li><input type="checkbox" name="answer" id="ans3" class="answer">
+                            <label for="ans3"><input type="text" placeholder="option3" id="option3" class="opt" required></label>
                         </li>
 
-                        <li><input type="radio" name="answer" id="ans4" class="answer">
-                            <label for="ans4"><input type="text" placeholder="option4" id="option4" class="opt"></label>
+                        <li><input type="checkbox" name="answer" id="ans4" class="answer">
+                            <label for="ans4"><input type="text" placeholder="option4" id="option4" class="opt" required></label>
                         </li>
                     </ol>
-                    <span id="NOQ">Number of questions added: </span> <span id="numQ">0 </span>
+                    
                 </div>
 
 
