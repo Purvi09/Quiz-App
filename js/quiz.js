@@ -1,12 +1,5 @@
-class Question {
-  constructor(ques, opts, correct) {
-    this.ques = ques;
-    this.opts = opts;
-    this.correct = correct;
-  }
-}
-
 var ques_arr = JSON.parse(localStorage.getItem("quiz"));
+correct = -1;
 
 // Display play now when the page is loaded
 document.addEventListener("DOMContentLoaded", () => {
@@ -32,4 +25,12 @@ function game() {
   for (var i = 0; i < opts.length; i++) {
     opts[i].textContent = ques_arr[quesnum - 1]['opts'][i];
   }
+  correct = ques_arr[quesnum - 1]['correct'];
 }
+
+document.getElementById('check').addEventListener('click', () => {
+  options = document.getElementsByClassName('opt');
+
+  }
+
+});
