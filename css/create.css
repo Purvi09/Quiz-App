@@ -1,7 +1,20 @@
-h1{
-    margin:auto;
-    text-align: center;
-    padding:40px;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+    h1{
+    /* margin:auto; */
+    text-align: left;
+    padding-top:80%;
+    margin-bottom: 20px;
+    padding:20px;
+    font-size: 520%;
+    font-family:cursive;
+    color: white;
+    background-color: black;
+    margin-top:0;
+    padding-bottom:20px;
 }
 /* input[type="text"]#title{
     width:90%;
@@ -12,14 +25,17 @@ h1{
     /* padding:30px; */
     width:70%;
     /* margin-right:200px; */
-    background-color: rgb(175, 224, 224);
+    background-color: white;
     text-align: left;
-    height:40%;
-    padding-top: 0.05%;
+    height:30%;
+    padding-top: 2%;
+    border-radius: 15px 15px 0px 0px;
+    margin-top:3%;
 }
 input[type="textarea"]{
     width:100%;
     padding-bottom:100px;
+    margin-top:100px;
     height:max-content;
 
 }
@@ -38,15 +54,22 @@ li{
     padding-right: 10px;
 } */
 .options{
-    background-color: rgb(196, 248, 248);
+    background-color: white;
+    /* border-radius: 15px; */
+    /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
     /* padding:40px;
     margin-left:300px;
     margin-right:200px; */
     width:70%;
-    margin:auto;
-    padding:0.1%;
+    margin-top:1%;
+    margin-left:15%;
+    padding-top:40%;
+    padding:0.01%;
     padding-bottom: 1%;
+    margin-top:0%;
+    border-radius: 0px 0px 10px 10px;
 }
+
 h3{
     margin-left:1%;
     margin-top:3%;
@@ -54,6 +77,7 @@ h3{
 .textques{
     margin-left:1%;
     margin-bottom:2%;
+    margin-top:2%;
     width:90%;
     height:80%;
     padding-bottom:5%;
@@ -67,19 +91,50 @@ h3{
 }
 #ETQ{
     margin-top:-1%;
+    margin-left:1%;
+    font-weight: bolder;
+    padding-bottom: 1%;
+
+
 }
 #NOQ{
     font-weight: bolder;
-    margin-left: 1%;
+    margin-left: 50%;
+    margin-top:-5%;
+    padding-bottom: 1%;
 }
 span{
     font-size: 120%;
+    padding-bottom: 20px;
 }
 input[type="text"]{
-    width:15%;
+    width:90%;
+    border-radius: 15px;
 }
 button{
     font-size: 120%;
     margin-right: 3%;
     border:1px solid black;
+    border-radius: 10px;
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+    background-color: rgba(0, 0, 255, 0.329);
+    color:white;
 }
+body{
+    height:800px;
+    
+    background-image: url("bg2.jpg");
+    background-repeat : no-repeat;
+    background-size: 100%;
+    font-family: cursive;
+
+}
+/* .Question:hover,.options:hover {
+    background-color: rgba(0, 0, 255, 0.055);
+    color: white;
+  } */
+  button:hover{
+      transform: scale(1.3);
+  }
