@@ -124,8 +124,8 @@ button{
 }
 body{
     height:800px;
-    
-    background-image: url("bg2.jpg");
+
+    /* background-image: url("bg2.jpg"); */
     background-repeat : no-repeat;
     background-size: 100%;
     font-family: cursive;

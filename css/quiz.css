@@ -54,7 +54,7 @@ button{
   border:1px solid black;
 }
 
-.play-box {
+.box {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -66,11 +66,15 @@ button{
   border: 1px solid black;
 }
 
-.playB {
+.playB, .scorecard {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.opt-div {
+  margin-top: 2px;
 }
 
 @media only screen and (max-width: 500px) {

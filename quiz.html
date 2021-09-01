@@ -26,26 +26,45 @@
             </div>
             <div class="Options">
                 <ol>
-                    <li><input type="radio" name="opt" id="opt1" >
+                  <div class="opt-div">
+                    <li>
+                        <input type="radio" name="opt" class="opt-radio">
                         <label for="ans1" class="opt">option-1</label>
                     </li>
-                    <li><input type="radio" name="opt" id="opt2" >
-                        <label for="ans1" class="opt">option-2</label>
+                  </div>
+                  <div class="opt-div">
+                    <li>
+                        <input type="radio" name="opt" class="opt-radio">
+                        <label for="ans1" class="opt">option-1</label>
                     </li>
-                    <li><input type="radio" name="opt" id="opt3" >
-                        <label for="ans1" class="opt">option-3</label>
+                  </div>
+                  <div class="opt-div">
+                    <li>
+                        <input type="radio" name="opt" class="opt-radio">
+                        <label for="ans1" class="opt">option-1</label>
                     </li>
-                    <li><input type="radio" name="opt" id="opt4" >
-                        <label for="ans1" class="opt">option-4</label>
+                  </div>
+                  <div class="opt-div">
+                    <li>
+                        <input type="radio" name="opt" class="opt-radio">
+                        <label for="ans1" class="opt">option-1</label>
                     </li>
+                  </div>
                 </ol>
                 <button id="check">Check</button>
             </div>
         </div>
     </div>
     <div id ="playnow">
-      <div class="play-box">
+      <div class="box">
         <button type="button" id="play" class="playB">PLAY NOW</button>
+      </div>
+    </div>
+    <div id="end">
+      <div class="box">
+        <div class="scorecard">
+          <h3>Score: </h3> <span id="endscore">0</span>
+        </div>
       </div>
     </div>
     <script src="js/quiz.js" charset="utf-8"></script>
