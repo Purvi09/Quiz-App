@@ -20,8 +20,13 @@ function timer() {
     timeleft -= 1;
     document.getElementById('timer').textContent = timeleft;
     if (timeleft == 0) {
-      document.getElementById('check').textContent = 'Next';
+      if (Math.floor(document.getElementById('quesnum').textContent) == ques_arr.length) {
+        document.getElementById('check').textContent = 'End'; //If the question is last
+      } else {
+        document.getElementById('check').textContent = 'Next';
+      }
       document.getElementsByClassName('opt-div')[correct].style.border = "2px solid green";
+      document.getElementsByClassName('opt-div')[correct].style.backgroundColor = "lightgreen";
     }
   }
 }
@@ -66,10 +71,13 @@ document.getElementById('check').addEventListener('click', (e) => {
         score += 10;
         document.getElementById('score').textContent = score;
         document.getElementsByClassName('opt-div')[correct].style.border = "2px solid green";
+        document.getElementsByClassName('opt-div')[correct].style.backgroundColor = "lightgreen";
       }
       else {
         document.getElementsByClassName('opt-div')[correct].style.border = "2px solid green";
+        document.getElementsByClassName('opt-div')[correct].style.backgroundColor = "lightgreen";
         document.getElementsByClassName('opt-div')[marked].style.border = "2px solid red";
+        document.getElementsByClassName('opt-div')[marked].style.backgroundColor = "rgb(255,127,127)";
       }
     }
   }
@@ -83,6 +91,8 @@ document.getElementById('check').addEventListener('click', (e) => {
     for (var i = 0; i < 4; i++) {
       options[i].checked = false;
       optDiv[i].style.border = "0px";
+      optDiv[i].style.backgroundColor = "white";
+
     }
 
     document.getElementById('check').textContent = 'Check';

@@ -26,7 +26,7 @@ class Question {
       }
     }
     if(correct === -1) {
-        alert("Choose the correct option.");
+        alert("Choose the option which is correct by marking the checkbox besides it.");
     }
     else {
         const question = new Question(ques, opts_value, correct);
@@ -44,7 +44,13 @@ class Question {
   // event listerner for adding the quiz to local storage
   document.getElementById('SubmitB').addEventListener('click', (e) => {
     e.preventDefault();
-    localStorage.setItem("quiz", JSON.stringify(ques_arr));
-    document.getElementById('numQ').textContent = 0;
-    console.log(ques_arr);
+    if (ques_arr.length == 0) {
+      alert("Add atleast one question!!");
+    }
+    else {
+      localStorage.setItem("quiz", JSON.stringify(ques_arr));
+      document.getElementById('numQ').textContent = 0;
+      window.location.replace("../Quiz-App/quiz.html");
+    }
+
   })
