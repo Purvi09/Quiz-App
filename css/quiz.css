@@ -1,8 +1,14 @@
 body{
     background-image: url("https://images.ctfassets.net/usf1vwtuqyxm/5cr4lVBZ2k1il5kgkj0op8/68fcc40c97192a3dbaaa20ea5153c7bf/Quizzes-Hub-Copy-compressor.png?w=1024&fm=webp&q=70");
     background-repeat: no-repeat;
-    background-size:1500%;
-    font-family: serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+    /* background-repeat: no-repeat;
+    background-size:100%;
+    font-family: serif; */
 }
 .main{
     background-color: white;
@@ -108,12 +114,13 @@ button{
 }
 .banner{
     background-color: #10141b;
-    padding:3%;
+    padding:1%;
     color: white;
     margin: -0.5%;
-    font-size: 300%;
+    /* margin-left: 1%; */
+    font-size: 450%;
     font-weight: bolder;
-    font-family: 'Azeret Mono', monospace;
+    font-family:'Merriweather', serif;
 }
 #check:hover{
     transform:scale(1.2);
@@ -146,6 +153,9 @@ button{
 #scoreh,#questionh{
     font-size: 100%;
     padding:2%;
+}
+#quiz{
+    margin-left: 1%;
 }
 
 @media only screen and (max-width: 550px) {
