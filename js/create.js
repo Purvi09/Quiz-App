@@ -50,7 +50,7 @@ class Question {
     else {
       localStorage.setItem("quiz", JSON.stringify(ques_arr));
       document.getElementById('numQ').textContent = 0;
-      window.location.replace("../Quiz-App/quiz.html");
+      window.location.replace("quiz.html");
     }
 
   })
